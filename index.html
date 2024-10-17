@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ernest Nyabayo Osindo - Creative Web Solutions from Kenya</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="readme-images/favicon.JPG" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    /*
+      - Added custom CSS for hover effects and project filter
+    */
+    .portfolio-card {
+      transition: transform 0.3s;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .portfolio-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .filter-button {
+      margin: 0 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .filter-button:hover {
+      background-color: #0056b3;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Ernest Nyabayo Osindo</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ernest's Photo"
+              class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">5+</p>
+
+              <p class="elem-text">Years of Experience</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">150+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+
+            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from Kenya"
+              class="rotate-img">
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Ernest Nyabayo Osindo</strong> Web Developer from Kenya
+            </h2>
+
+            <p class="hero-text">
+              As a full-stack web developer, I specialize in building dynamic, responsive websites and applications that solve real-world problems. I bring creative solutions and technical expertise, working remotely from Kenya to deliver high-quality digital experiences for global clients.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Ernest's Photo"
+              class="img-cover">
+
+            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ernest's Photo"
+              class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Developer</p>
+
+            <h2 class="h2 section-title">I Develop Websites that Solve realworld issues</h2>
+
+            <p class="section-text">
+             I specialize in creating innovative websites that address real-life problems and streamline user experiences. My goal is to deliver tailored solutions that improve efficiency and meet the unique needs of businesses and individuals alike, ensuring both functionality and impact.
+            </p>
+
+            <p class="section-text">
+              I am committed to delivering high-quality solutions that adhere to industry standards and best practices. My work is driven by a passion for innovation, ensuring that each project is crafted with precision and tailored to meet the unique needs of every client.
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">My Portfolio</p>
+
+          <h2 class="h2 section-title">My Recent Projects</h2>
+
+          <p class="section-text">
+            I take pride in my work, and I strive to create projects that not only meet but exceed client expectations. Below is a selection of my recent projects that showcase my skills and dedication.
+          </p>
+
+
+          <ul class="portfolio-list">
+
+            <li class="portfolio-item web">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Website</p>
+
+                  <h3 class="h3 card-title">Website for Computer Repair Services</h3>
+
+                  <a href="URL_OF_YOUR_PROJECT" class="btn-link" target="_blank" rel="noopener noreferrer"> <!-- Replace URL_OF_YOUR_PROJECT with the actual link -->
+                      <span>View Project</span>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                 </a>
+
+
+
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-item app">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Website</p>
+
+                  <h3 class="h3 card-title">Website for furniture business.</h3>
+
+                  <a href="URL_OF_YOUR_PROJECT" class="btn-link" target="_blank" rel="noopener noreferrer"> <!-- Replace URL_OF_YOUR_PROJECT with the actual link -->
+                      <span>View Project</span>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                 </a>
+
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-item web">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Website</p>
+
+                  <h3 class="h3 card-title">Website for Interior Designs</h3>
+
+                  <a href="URL_OF_YOUR_PROJECT" class="btn-link" target="_blank" rel="noopener noreferrer">
+                      <span>View Project</span>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                 </a>
+
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-item app">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Website</p>
+
+                  <h3 class="h3 card-title">Website for Airbnb</h3>
+
+                  <a href="URL_OF_YOUR_PROJECT" class="btn-link" target="_blank" rel="noopener noreferrer">
+                      <span>View Project</span>
+                      <ion-icon name="arrow-forward"></ion-icon>
+                 </a>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!--
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">What I'm Good At</h2>
+
+          <div class="skills-wrapper">
+
+            <div class="skill-card">
+              <h3 class="h3 skill-title">Web Development</h3>
+
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 95%"></div>
+              </div>
+
+              <p class="skill-text">95%</p>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="h3 skill-title">Bootstrap</h3>
+
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 90%"></div>
+              </div>
+
+              <p class="skill-text">90%</p>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="h3 skill-title">Django</h3>
+
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 85%"></div>
+              </div>
+
+              <p class="skill-text">85%</p>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="h3 skill-title">HTML</h3>
+
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 80%"></div>
+              </div>
+
+              <p class="skill-text">80%</p>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="h3 skill-title">CSS</h3>
+
+              <div class="skill-bar">
+                <div class="skill-percentage" style="width: 75%"></div>
+              </div>
+
+              <p class="skill-text">75%</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Get in Touch</p>
+
+          <h2 class="h2 section-title">Contact Me</h2>
+
+          <form class="contact-form">
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Type your message here" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!--
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <p class="section-subtitle">My Thoughts</p>
+
+          <h2 class="h2 section-title">Latest Articles</h2>
+
+          <ul class="blog-list">
+
+            <li class="blog-item">
+              <a href="#" class="blog-card">
+                <img src="./assets/images/blog-1.jpg" width="400" height="300" loading="lazy" alt="Blog Post"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">How to Create Responsive Websites</h3>
+
+                  <p class="card-text">Learn how to create responsive websites that look great on all devices.</p>
+
+                  <span class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-item">
+              <a href="#" class="blog-card">
+                <img src="./assets/images/blog-2.jpg" width="400" height="300" loading="lazy" alt="Blog Post"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">Understanding JavaScript Closures</h3>
+
+                  <p class="card-text">A deep dive into closures in JavaScript and their use cases.</p>
+
+                  <span class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-item">
+              <a href="#" class="blog-card">
+                <img src="./assets/images/blog-3.jpg" width="400" height="300" loading="lazy" alt="Blog Post"
+                  class="img-cover">
+
+                <div class="card-content">
+                  <h3 class="h3 card-title">A Guide to Web Accessibility</h3>
+
+                  <p class="card-text">Learn the importance of making websites accessible to everyone.</p>
+
+                  <span class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-socials">
+        <a href="#" class="footer-link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="#" class="footer-link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+
+        <a href="#" class="footer-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="#" class="footer-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <p class="footer-text">
+        &copy; 2024 Ernest Nyabayo Osindo. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <!--
+    - custom javascript link
+  -->
+  <script src="./assets/js/main.js" type="module"></script>
+
+  <!--
+    - added JavaScript for project filtering
+  -->
+  <script>
+    function filterProjects(category) {
+      const projects = document.querySelectorAll('.portfolio-item');
+      projects.forEach(project => {
+        if (category === 'all' || project.classList.contains(category)) {
+          project.classList.remove('hidden');
+        } else {
+          project.classList.add('hidden');
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
