@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2024 codewithernest
+ * copyright 2022 codewithsadee
  */
 
 
@@ -25,16 +25,16 @@
   --vivid-sky-blue: hsl(196, 84%, 63%);
   --midnight-blue: hsl(231, 83%, 25%);
   --minion-yellow: hsl(50, 100%, 64%);
-  --independence: hsla(224, 24%, 27%, 0.09);
+  --independence: hsl(225, 24%, 27%);
   --orange-soda: hsl(7, 96%, 61%);
-  --space-cadet: hsla(120, 17%, 31%, 0.94);
+  --space-cadet: hsl(243, 23%, 18%);
   --fiery-rose: hsl(353, 83%, 65%);
   --klein-blue: hsl(230, 80%, 39%);
   --bluetiful: hsl(222, 88%, 55%);
-  --glaucous: hsl(0, 87%, 49%);
+  --glaucous: hsl(230, 52%, 63%);
   --manatee: hsl(254, 7%, 65%);
   --rufous: hsl(2, 85%, 35%);
-  --black: hsla(0, 0%, 100%, 0.89);
+  --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
   /**
@@ -510,7 +510,6 @@ body {
 
 .contact-input {
   background-color: var(--white);
-  text-decoration: white;
   color: var(--manatee);
   border-radius: var(--radius-5);
   padding: 15px 25px;
@@ -518,7 +517,7 @@ body {
   margin-block-end: 15px;
 }
 
-.contact-input::placeholder { color: white; }
+.contact-input::placeholder { color: inherit; }
 
 textarea.contact-input {
   resize: vertical;
@@ -540,7 +539,7 @@ textarea.contact-input {
 
 .btn-submit:is(:hover, :focus) {
   background-color: var(--white);
-  color: var(--white);
+  color: var(--black);
 }
 
 .contact-item {
